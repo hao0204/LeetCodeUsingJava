@@ -4,7 +4,13 @@ import java.util.HashMap;
 
 public class Solution {
 	
-//	public static int[] twoSum(int[] nums, int target) {
+	/**
+	 * time complexity O(n^2)
+	 * @param nums
+	 * @param target
+	 * @return
+	 */
+//	public int[] twoSum(int[] nums, int target) {
 //        int[] answer = new int[2];
 //        A:for (int i = 0; i < nums.length; ++i){
 //        	answer[0] = i;
@@ -19,7 +25,13 @@ public class Solution {
 //        return answer;
 //    }
 	
-	public static int[] twoSum(int[] nums, int target) {
+	/**
+	 * using map to make time complexity O(n)
+	 * @param nums
+	 * @param target
+	 * @return
+	 */
+	public int[] twoSum(int[] nums, int target) {
       int[] answer = new int[2];
       HashMap<Integer, Integer> map = new HashMap<>();
       for (int i = 0; i < nums.length; ++i){
@@ -31,12 +43,5 @@ public class Solution {
       		return new int[]{i, map.get(b)};
       }
       return answer;
-  }
-	
-	public static void main(String[] args) {
-		int[] nums = {2, 7, 11, 15};
-		int[] d = twoSum(nums, 9);
-		System.out.println(d[0] + " " + d[1]);
 	}
-
 }
