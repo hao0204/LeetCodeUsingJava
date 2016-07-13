@@ -10,7 +10,7 @@ public class Solution {
 	 * @param target
 	 * @return
 	 */
-//	public int[] twoSum(int[] nums, int target) {
+//	public static int[] twoSum(int[] nums, int target) {
 //        int[] answer = new int[2];
 //        A:for (int i = 0; i < nums.length; ++i){
 //        	answer[0] = i;
