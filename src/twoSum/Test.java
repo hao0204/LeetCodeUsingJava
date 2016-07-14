@@ -1,4 +1,4 @@
-package TwoSum;
+package twoSum;
 
 public class Test {
 
