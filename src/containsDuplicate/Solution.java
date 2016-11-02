@@ -8,7 +8,7 @@ import java.util.Set;
  */
 public class Solution {
     public boolean containsDuplicate(int[] nums) {
-        final Set<Integer> set = new HashSet<>();
+        Set<Integer> set = new HashSet<>(nums.length);
         for (int num : nums){
             if (!set.add(num))
                 return true;
